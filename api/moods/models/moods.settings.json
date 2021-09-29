@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "moods",
+  "info": {
+    "name": "moods"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mood_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "mood_description": {
+      "type": "text"
+    },
+    "place": {
+      "via": "moods",
+      "model": "places"
+    }
+  }
+}

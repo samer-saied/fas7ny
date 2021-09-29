@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "places",
+  "info": {
+    "name": "places",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "address": {
+      "type": "text"
+    },
+    "expected_price": {
+      "type": "decimal",
+      "default": 0,
+      "min": 0
+    },
+    "moods": {
+      "collection": "moods",
+      "via": "place"
+    },
+    "activities": {
+      "collection": "activity",
+      "via": "place"
+    },
+    "perfect_times": {
+      "collection": "perfect-time",
+      "via": "place"
+    },
+    "seasons": {
+      "collection": "seasons",
+      "via": "places",
+      "dominant": true
+    },
+    "main_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

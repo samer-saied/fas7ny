@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/perfect-times",
+      "handler": "perfect-time.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/perfect-times/count",
+      "handler": "perfect-time.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/perfect-times/:id",
+      "handler": "perfect-time.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/perfect-times",
+      "handler": "perfect-time.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/perfect-times/:id",
+      "handler": "perfect-time.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/perfect-times/:id",
+      "handler": "perfect-time.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

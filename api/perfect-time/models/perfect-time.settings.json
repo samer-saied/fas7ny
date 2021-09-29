@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "perfect_times",
+  "info": {
+    "name": "perfect_time"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "time": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "period": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "place": {
+      "via": "perfect_times",
+      "model": "places"
+    }
+  }
+}
