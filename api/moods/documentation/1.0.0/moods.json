@@ -585,6 +585,12 @@
               "main_image": {
                 "type": "string"
               },
+              "latitude": {
+                "type": "string"
+              },
+              "longitude": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },

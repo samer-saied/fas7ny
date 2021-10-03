@@ -804,6 +804,12 @@
               }
             }
           },
+          "latitude": {
+            "type": "string"
+          },
+          "longitude": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -852,6 +858,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "latitude": {
+            "type": "string"
+          },
+          "longitude": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

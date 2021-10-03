@@ -65,6 +65,12 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
     }
   }
 }

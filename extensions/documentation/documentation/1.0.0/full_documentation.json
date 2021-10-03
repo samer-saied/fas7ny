@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/29/2021 9:10:21 AM"
+    "x-generation-date": "10/03/2021 4:27:25 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4913,6 +4913,12 @@
               "main_image": {
                 "type": "string"
               },
+              "latitude": {
+                "type": "string"
+              },
+              "longitude": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5025,6 +5031,12 @@
                 }
               },
               "main_image": {
+                "type": "string"
+              },
+              "latitude": {
+                "type": "string"
+              },
+              "longitude": {
                 "type": "string"
               },
               "published_at": {
@@ -5140,6 +5152,12 @@
                 }
               },
               "main_image": {
+                "type": "string"
+              },
+              "latitude": {
+                "type": "string"
+              },
+              "longitude": {
                 "type": "string"
               },
               "published_at": {
@@ -5476,6 +5494,12 @@
               }
             }
           },
+          "latitude": {
+            "type": "string"
+          },
+          "longitude": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5524,6 +5548,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "latitude": {
+            "type": "string"
+          },
+          "longitude": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -5605,6 +5635,12 @@
                   }
                 },
                 "main_image": {
+                  "type": "string"
+                },
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
                   "type": "string"
                 },
                 "published_at": {
