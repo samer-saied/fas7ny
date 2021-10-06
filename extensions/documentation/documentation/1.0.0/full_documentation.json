@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/03/2021 4:27:25 AM"
+    "x-generation-date": "10/06/2021 2:19:07 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4919,6 +4919,18 @@
               "longitude": {
                 "type": "string"
               },
+              "rate": {
+                "type": "integer"
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "locale": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5037,6 +5049,18 @@
                 "type": "string"
               },
               "longitude": {
+                "type": "string"
+              },
+              "rate": {
+                "type": "integer"
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "locale": {
                 "type": "string"
               },
               "published_at": {
@@ -5158,6 +5182,18 @@
                 "type": "string"
               },
               "longitude": {
+                "type": "string"
+              },
+              "rate": {
+                "type": "integer"
+              },
+              "localizations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "locale": {
                 "type": "string"
               },
               "published_at": {
@@ -5500,6 +5536,100 @@
           "longitude": {
             "type": "string"
           },
+          "rate": {
+            "type": "integer"
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "full_name",
+                "description",
+                "main_image"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "full_name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "address": {
+                  "type": "string"
+                },
+                "expected_price": {
+                  "type": "number"
+                },
+                "moods": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "activities": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "perfect_times": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "seasons": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "main_image": {
+                  "type": "string"
+                },
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                },
+                "rate": {
+                  "type": "integer"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "locale": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5553,6 +5683,18 @@
             "type": "string"
           },
           "longitude": {
+            "type": "string"
+          },
+          "rate": {
+            "type": "integer"
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "locale": {
             "type": "string"
           },
           "published_at": {
@@ -5641,6 +5783,18 @@
                   "type": "string"
                 },
                 "longitude": {
+                  "type": "string"
+                },
+                "rate": {
+                  "type": "integer"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
                   "type": "string"
                 },
                 "published_at": {
