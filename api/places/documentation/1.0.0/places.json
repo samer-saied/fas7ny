@@ -816,13 +816,17 @@
           "city": {
             "required": [
               "id",
-              "Name"
+              "Name",
+              "image"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
               "Name": {
+                "type": "string"
+              },
+              "image": {
                 "type": "string"
               },
               "localizations": {
