@@ -608,6 +608,15 @@
               "rate": {
                 "type": "integer"
               },
+              "city": {
+                "type": "string"
+              },
+              "favourites": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "localizations": {
                 "type": "array",
                 "items": {

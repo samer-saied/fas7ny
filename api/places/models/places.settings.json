@@ -123,6 +123,13 @@
       "type": "integer",
       "min": 0,
       "max": 5
+    },
+    "city": {
+      "model": "city"
+    },
+    "favourites": {
+      "via": "places",
+      "collection": "favourite"
     }
   }
 }
