@@ -17,8 +17,8 @@
       "model": "user"
     },
     "places": {
-      "collection": "places",
       "via": "favourites",
+      "collection": "places",
       "dominant": true
     }
   }

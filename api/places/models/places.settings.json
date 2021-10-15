@@ -80,8 +80,8 @@
       "via": "place"
     },
     "seasons": {
-      "collection": "seasons",
       "via": "places",
+      "collection": "seasons",
       "dominant": true
     },
     "main_image": {
@@ -128,6 +128,7 @@
       "model": "city"
     },
     "favourites": {
+      "private": true,
       "via": "places",
       "collection": "favourite"
     }
