@@ -10,30 +10,18 @@
     "timestamps": true,
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
-    "full_name": {
+    "name_ar": {
       "type": "string",
       "required": true,
       "unique": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "pluginOptions": {}
     },
-    "description": {
+    "description_ar": {
       "type": "text",
       "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "pluginOptions": {}
     },
     "images": {
       "collection": "file",
@@ -43,41 +31,29 @@
       ],
       "plugin": "upload",
       "required": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "pluginOptions": {}
     },
-    "address": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+    "address_ar": {
+      "type": "string",
+      "pluginOptions": {}
     },
     "expected_price": {
       "type": "decimal",
       "default": 0,
       "min": 0,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "pluginOptions": {}
     },
     "moods": {
-      "collection": "moods",
-      "via": "place"
+      "via": "place",
+      "collection": "moods"
     },
     "activities": {
-      "collection": "activity",
-      "via": "place"
+      "via": "place",
+      "collection": "activity"
     },
     "perfect_times": {
-      "collection": "perfect-time",
-      "via": "place"
+      "via": "place",
+      "collection": "perfect-time"
     },
     "seasons": {
       "via": "places",
@@ -92,34 +68,18 @@
       ],
       "plugin": "upload",
       "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "pluginOptions": {}
     },
     "latitude": {
       "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "pluginOptions": {}
     },
     "longitude": {
       "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
+      "pluginOptions": {}
     },
     "rate": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
+      "pluginOptions": {},
       "type": "integer",
       "min": 0,
       "max": 5
@@ -131,6 +91,24 @@
       "private": true,
       "via": "places",
       "collection": "favourite"
+    },
+    "banner": {
+      "via": "place",
+      "model": "banner"
+    },
+    "name_en": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description_en": {
+      "type": "text",
+      "required": true,
+      "unique": false
+    },
+    "address_en": {
+      "type": "string",
+      "required": true
     }
   }
 }

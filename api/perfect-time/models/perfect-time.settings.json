@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "perfect_times",
   "info": {
-    "name": "perfect_time"
+    "name": "perfect_time",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "time": {
+    "time_ar": {
       "type": "string",
       "required": true,
       "unique": true
@@ -24,6 +25,11 @@
     "place": {
       "via": "perfect_times",
       "model": "places"
+    },
+    "time_en": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }

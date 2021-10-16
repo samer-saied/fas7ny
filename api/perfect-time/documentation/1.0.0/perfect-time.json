@@ -530,14 +530,15 @@
       "Perfect-time": {
         "required": [
           "id",
-          "time",
-          "period"
+          "time_ar",
+          "period",
+          "time_en"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "time": {
+          "time_ar": {
             "type": "string"
           },
           "period": {
@@ -546,18 +547,21 @@
           "place": {
             "required": [
               "id",
-              "full_name",
-              "description",
-              "main_image"
+              "name_ar",
+              "description_ar",
+              "main_image",
+              "name_en",
+              "description_en",
+              "address_en"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "full_name": {
+              "name_ar": {
                 "type": "string"
               },
-              "description": {
+              "description_ar": {
                 "type": "string"
               },
               "images": {
@@ -566,7 +570,7 @@
                   "type": "string"
                 }
               },
-              "address": {
+              "address_ar": {
                 "type": "string"
               },
               "expected_price": {
@@ -617,13 +621,16 @@
                   "type": "string"
                 }
               },
-              "localizations": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "banner": {
+                "type": "string"
               },
-              "locale": {
+              "name_en": {
+                "type": "string"
+              },
+              "description_en": {
+                "type": "string"
+              },
+              "address_en": {
                 "type": "string"
               },
               "published_at": {
@@ -637,6 +644,9 @@
               }
             }
           },
+          "time_en": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -645,17 +655,21 @@
       },
       "NewPerfect-time": {
         "required": [
-          "time",
-          "period"
+          "time_ar",
+          "period",
+          "time_en"
         ],
         "properties": {
-          "time": {
+          "time_ar": {
             "type": "string"
           },
           "period": {
             "type": "string"
           },
           "place": {
+            "type": "string"
+          },
+          "time_en": {
             "type": "string"
           },
           "published_at": {

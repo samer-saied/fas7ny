@@ -517,13 +517,14 @@
       "Seasons": {
         "required": [
           "id",
-          "name"
+          "name_ar",
+          "name_en"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "name": {
+          "name_ar": {
             "type": "string"
           },
           "places": {
@@ -531,18 +532,21 @@
             "items": {
               "required": [
                 "id",
-                "full_name",
-                "description",
-                "main_image"
+                "name_ar",
+                "description_ar",
+                "main_image",
+                "name_en",
+                "description_en",
+                "address_en"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "full_name": {
+                "name_ar": {
                   "type": "string"
                 },
-                "description": {
+                "description_ar": {
                   "type": "string"
                 },
                 "images": {
@@ -551,7 +555,7 @@
                     "type": "string"
                   }
                 },
-                "address": {
+                "address_ar": {
                   "type": "string"
                 },
                 "expected_price": {
@@ -602,13 +606,16 @@
                     "type": "string"
                   }
                 },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "banner": {
+                  "type": "string"
                 },
-                "locale": {
+                "name_en": {
+                  "type": "string"
+                },
+                "description_en": {
+                  "type": "string"
+                },
+                "address_en": {
                   "type": "string"
                 },
                 "published_at": {
@@ -622,15 +629,19 @@
                 }
               }
             }
+          },
+          "name_en": {
+            "type": "string"
           }
         }
       },
       "NewSeasons": {
         "required": [
-          "name"
+          "name_ar",
+          "name_en"
         ],
         "properties": {
-          "name": {
+          "name_ar": {
             "type": "string"
           },
           "places": {
@@ -638,6 +649,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "name_en": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

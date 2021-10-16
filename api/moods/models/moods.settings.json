@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "moods",
   "info": {
-    "name": "moods"
+    "name": "moods",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,17 +12,28 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "mood_name": {
+    "mood_name_ar": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "mood_description": {
-      "type": "text"
+    "mood_description_ar": {
+      "type": "text",
+      "required": true,
+      "unique": false
     },
     "place": {
       "via": "moods",
       "model": "places"
+    },
+    "mood_name_en": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "mood_description_en": {
+      "type": "string",
+      "required": true
     }
   }
 }

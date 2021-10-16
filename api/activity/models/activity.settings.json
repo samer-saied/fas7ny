@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "activities",
   "info": {
-    "name": "activity"
+    "name": "activity",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,17 +12,25 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "activity_name": {
+    "activity_name_ar": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "activity_description": {
+    "activity_description_ar": {
       "type": "text"
     },
     "place": {
       "via": "activities",
       "model": "places"
+    },
+    "activity_name_en": {
+      "type": "string",
+      "required": true
+    },
+    "activity_description_en": {
+      "type": "text",
+      "required": true
     }
   }
 }

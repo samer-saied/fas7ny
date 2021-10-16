@@ -517,18 +517,21 @@
       "Places": {
         "required": [
           "id",
-          "full_name",
-          "description",
-          "main_image"
+          "name_ar",
+          "description_ar",
+          "main_image",
+          "name_en",
+          "description_en",
+          "address_en"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "full_name": {
+          "name_ar": {
             "type": "string"
           },
-          "description": {
+          "description_ar": {
             "type": "string"
           },
           "images": {
@@ -601,7 +604,7 @@
               }
             }
           },
-          "address": {
+          "address_ar": {
             "type": "string"
           },
           "expected_price": {
@@ -613,19 +616,28 @@
             "items": {
               "required": [
                 "id",
-                "mood_name"
+                "mood_name_ar",
+                "mood_description_ar",
+                "mood_name_en",
+                "mood_description_en"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "mood_name": {
+                "mood_name_ar": {
                   "type": "string"
                 },
-                "mood_description": {
+                "mood_description_ar": {
                   "type": "string"
                 },
                 "place": {
+                  "type": "string"
+                },
+                "mood_name_en": {
+                  "type": "string"
+                },
+                "mood_description_en": {
                   "type": "string"
                 },
                 "published_at": {
@@ -645,19 +657,27 @@
             "items": {
               "required": [
                 "id",
-                "activity_name"
+                "activity_name_ar",
+                "activity_name_en",
+                "activity_description_en"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "activity_name": {
+                "activity_name_ar": {
                   "type": "string"
                 },
-                "activity_description": {
+                "activity_description_ar": {
                   "type": "string"
                 },
                 "place": {
+                  "type": "string"
+                },
+                "activity_name_en": {
+                  "type": "string"
+                },
+                "activity_description_en": {
                   "type": "string"
                 },
                 "published_at": {
@@ -677,20 +697,24 @@
             "items": {
               "required": [
                 "id",
-                "time",
-                "period"
+                "time_ar",
+                "period",
+                "time_en"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "time": {
+                "time_ar": {
                   "type": "string"
                 },
                 "period": {
                   "type": "string"
                 },
                 "place": {
+                  "type": "string"
+                },
+                "time_en": {
                   "type": "string"
                 },
                 "published_at": {
@@ -710,13 +734,14 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "name_ar",
+                "name_en"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "name": {
+                "name_ar": {
                   "type": "string"
                 },
                 "places": {
@@ -724,6 +749,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "name_en": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -813,26 +841,21 @@
           "city": {
             "required": [
               "id",
-              "Name",
-              "image"
+              "Name_ar",
+              "image",
+              "Name_en"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "Name": {
+              "Name_ar": {
                 "type": "string"
               },
               "image": {
                 "type": "string"
               },
-              "localizations": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "locale": {
+              "Name_en": {
                 "type": "string"
               },
               "created_by": {
@@ -843,104 +866,45 @@
               }
             }
           },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "full_name",
-                "description",
-                "main_image"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "full_name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "address": {
-                  "type": "string"
-                },
-                "expected_price": {
-                  "type": "number"
-                },
-                "moods": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "activities": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "perfect_times": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "seasons": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "main_image": {
-                  "type": "string"
-                },
-                "latitude": {
-                  "type": "string"
-                },
-                "longitude": {
-                  "type": "string"
-                },
-                "rate": {
-                  "type": "integer"
-                },
-                "city": {
-                  "type": "string"
-                },
-                "favourites": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
+          "banner": {
+            "required": [
+              "id",
+              "bannerImage"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "place": {
+                "type": "string"
+              },
+              "bannerImage": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
-          "locale": {
+          "name_en": {
+            "type": "string"
+          },
+          "description_en": {
+            "type": "string"
+          },
+          "address_en": {
             "type": "string"
           },
           "published_at": {
@@ -951,17 +915,20 @@
       },
       "NewPlaces": {
         "required": [
-          "full_name",
-          "description"
+          "name_ar",
+          "description_ar",
+          "name_en",
+          "description_en",
+          "address_en"
         ],
         "properties": {
-          "full_name": {
+          "name_ar": {
             "type": "string"
           },
-          "description": {
+          "description_ar": {
             "type": "string"
           },
-          "address": {
+          "address_ar": {
             "type": "string"
           },
           "expected_price": {
@@ -1010,13 +977,16 @@
               "type": "string"
             }
           },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "banner": {
+            "type": "string"
           },
-          "locale": {
+          "name_en": {
+            "type": "string"
+          },
+          "description_en": {
+            "type": "string"
+          },
+          "address_en": {
             "type": "string"
           },
           "published_at": {

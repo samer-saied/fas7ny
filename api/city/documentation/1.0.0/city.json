@@ -517,14 +517,15 @@
       "City": {
         "required": [
           "id",
-          "Name",
-          "image"
+          "Name_ar",
+          "image",
+          "Name_en"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "Name": {
+          "Name_ar": {
             "type": "string"
           },
           "image": {
@@ -594,62 +595,21 @@
               }
             }
           },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "Name",
-                "image"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Name": {
-                  "type": "string"
-                },
-                "image": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "locale": {
+          "Name_en": {
             "type": "string"
           }
         }
       },
       "NewCity": {
         "required": [
-          "Name"
+          "Name_ar",
+          "Name_en"
         ],
         "properties": {
-          "Name": {
+          "Name_ar": {
             "type": "string"
           },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "locale": {
+          "Name_en": {
             "type": "string"
           },
           "created_by": {

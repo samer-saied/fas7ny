@@ -10,18 +10,10 @@
     "timestamps": true,
     "draftAndPublish": false
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
+    "Name_ar": {
+      "pluginOptions": {},
       "type": "string",
       "required": true,
       "unique": true
@@ -34,11 +26,11 @@
       ],
       "plugin": "upload",
       "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
+      "pluginOptions": {}
+    },
+    "Name_en": {
+      "type": "string",
+      "required": true
     }
   }
 }
