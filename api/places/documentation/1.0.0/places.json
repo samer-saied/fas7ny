@@ -611,87 +611,6 @@
             "type": "number",
             "default": 0
           },
-          "moods": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "mood_name_ar",
-                "mood_description_ar",
-                "mood_name_en",
-                "mood_description_en"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "mood_name_ar": {
-                  "type": "string"
-                },
-                "mood_description_ar": {
-                  "type": "string"
-                },
-                "place": {
-                  "type": "string"
-                },
-                "mood_name_en": {
-                  "type": "string"
-                },
-                "mood_description_en": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "activities": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "activity_name_ar",
-                "activity_name_en",
-                "activity_description_en"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "activity_name_ar": {
-                  "type": "string"
-                },
-                "activity_description_ar": {
-                  "type": "string"
-                },
-                "place": {
-                  "type": "string"
-                },
-                "activity_name_en": {
-                  "type": "string"
-                },
-                "activity_description_en": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "perfect_times": {
             "type": "array",
             "items": {
@@ -715,9 +634,6 @@
                   "type": "string"
                 },
                 "time_en": {
-                  "type": "string"
-                },
-                "published_at": {
                   "type": "string"
                 },
                 "created_by": {
@@ -907,6 +823,87 @@
           "address_en": {
             "type": "string"
           },
+          "activities": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "activity_name_ar",
+                "activity_name_en",
+                "activity_description_en"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "activity_name_ar": {
+                  "type": "string"
+                },
+                "activity_description_ar": {
+                  "type": "string"
+                },
+                "places": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "activity_name_en": {
+                  "type": "string"
+                },
+                "activity_description_en": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "moods": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "mood_name_ar",
+                "mood_description_ar",
+                "mood_name_en",
+                "mood_description_en"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "mood_name_ar": {
+                  "type": "string"
+                },
+                "mood_description_ar": {
+                  "type": "string"
+                },
+                "places": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "mood_name_en": {
+                  "type": "string"
+                },
+                "mood_description_en": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -934,18 +931,6 @@
           "expected_price": {
             "type": "number",
             "default": 0
-          },
-          "moods": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "activities": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "perfect_times": {
             "type": "array",
@@ -988,6 +973,18 @@
           },
           "address_en": {
             "type": "string"
+          },
+          "activities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "moods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

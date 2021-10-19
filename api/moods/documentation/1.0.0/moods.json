@@ -532,103 +532,106 @@
           "mood_description_ar": {
             "type": "string"
           },
-          "place": {
-            "required": [
-              "id",
-              "name_ar",
-              "description_ar",
-              "main_image",
-              "name_en",
-              "description_en",
-              "address_en"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name_ar": {
-                "type": "string"
-              },
-              "description_ar": {
-                "type": "string"
-              },
-              "images": {
-                "type": "array",
-                "items": {
+          "places": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name_ar",
+                "description_ar",
+                "main_image",
+                "name_en",
+                "description_en",
+                "address_en"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name_ar": {
+                  "type": "string"
+                },
+                "description_ar": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "address_ar": {
+                  "type": "string"
+                },
+                "expected_price": {
+                  "type": "number"
+                },
+                "perfect_times": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "seasons": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "main_image": {
+                  "type": "string"
+                },
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                },
+                "rate": {
+                  "type": "integer"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "favourites": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "banner": {
+                  "type": "string"
+                },
+                "name_en": {
+                  "type": "string"
+                },
+                "description_en": {
+                  "type": "string"
+                },
+                "address_en": {
+                  "type": "string"
+                },
+                "activities": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "moods": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "address_ar": {
-                "type": "string"
-              },
-              "expected_price": {
-                "type": "number"
-              },
-              "moods": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "perfect_times": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "seasons": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "main_image": {
-                "type": "string"
-              },
-              "latitude": {
-                "type": "string"
-              },
-              "longitude": {
-                "type": "string"
-              },
-              "rate": {
-                "type": "integer"
-              },
-              "city": {
-                "type": "string"
-              },
-              "favourites": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "banner": {
-                "type": "string"
-              },
-              "name_en": {
-                "type": "string"
-              },
-              "description_en": {
-                "type": "string"
-              },
-              "address_en": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -637,10 +640,6 @@
           },
           "mood_description_en": {
             "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
           }
         }
       },
@@ -658,18 +657,17 @@
           "mood_description_ar": {
             "type": "string"
           },
-          "place": {
-            "type": "string"
+          "places": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "mood_name_en": {
             "type": "string"
           },
           "mood_description_en": {
             "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
           },
           "created_by": {
             "type": "string"

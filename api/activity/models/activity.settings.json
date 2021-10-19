@@ -8,7 +8,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -20,9 +20,10 @@
     "activity_description_ar": {
       "type": "text"
     },
-    "place": {
+    "places": {
+      "collection": "places",
       "via": "activities",
-      "model": "places"
+      "dominant": true
     },
     "activity_name_en": {
       "type": "string",

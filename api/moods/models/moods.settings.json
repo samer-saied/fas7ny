@@ -8,7 +8,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -22,9 +22,10 @@
       "required": true,
       "unique": false
     },
-    "place": {
+    "places": {
+      "collection": "places",
       "via": "moods",
-      "model": "places"
+      "dominant": true
     },
     "mood_name_en": {
       "type": "string",
