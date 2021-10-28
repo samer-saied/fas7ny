@@ -782,38 +782,6 @@
               }
             }
           },
-          "banner": {
-            "required": [
-              "id",
-              "bannerImage"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "place": {
-                "type": "string"
-              },
-              "bannerImage": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "name_en": {
             "type": "string"
           },
@@ -904,6 +872,41 @@
               }
             }
           },
+          "banners": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "bannerImage"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "place": {
+                  "type": "string"
+                },
+                "bannerImage": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -962,9 +965,6 @@
               "type": "string"
             }
           },
-          "banner": {
-            "type": "string"
-          },
           "name_en": {
             "type": "string"
           },
@@ -981,6 +981,12 @@
             }
           },
           "moods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "banners": {
             "type": "array",
             "items": {
               "type": "string"

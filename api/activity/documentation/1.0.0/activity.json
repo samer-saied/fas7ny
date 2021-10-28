@@ -598,9 +598,6 @@
                     "type": "string"
                   }
                 },
-                "banner": {
-                  "type": "string"
-                },
                 "name_en": {
                   "type": "string"
                 },
@@ -617,6 +614,12 @@
                   }
                 },
                 "moods": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "banners": {
                   "type": "array",
                   "items": {
                     "type": "string"

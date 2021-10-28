@@ -561,18 +561,6 @@
               "expected_price": {
                 "type": "number"
               },
-              "moods": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "perfect_times": {
                 "type": "array",
                 "items": {
@@ -606,9 +594,6 @@
                   "type": "string"
                 }
               },
-              "banner": {
-                "type": "string"
-              },
               "name_en": {
                 "type": "string"
               },
@@ -617,6 +602,24 @@
               },
               "address_en": {
                 "type": "string"
+              },
+              "activities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "moods": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "banners": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"

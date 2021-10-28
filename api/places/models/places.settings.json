@@ -84,10 +84,6 @@
       "via": "places",
       "collection": "favourite"
     },
-    "banner": {
-      "via": "place",
-      "model": "banner"
-    },
     "name_en": {
       "type": "string",
       "unique": true,
@@ -109,6 +105,10 @@
     "moods": {
       "via": "places",
       "collection": "moods"
+    },
+    "banners": {
+      "via": "place",
+      "collection": "banner"
     }
   }
 }

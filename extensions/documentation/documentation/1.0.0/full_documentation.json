@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/20/2021 1:00:29 AM"
+    "x-generation-date": "10/28/2021 7:40:25 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6459,9 +6459,6 @@
                     "type": "string"
                   }
                 },
-                "banner": {
-                  "type": "string"
-                },
                 "name_en": {
                   "type": "string"
                 },
@@ -6478,6 +6475,12 @@
                   }
                 },
                 "moods": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "banners": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -6583,18 +6586,6 @@
               "expected_price": {
                 "type": "number"
               },
-              "moods": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "activities": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "perfect_times": {
                 "type": "array",
                 "items": {
@@ -6628,9 +6619,6 @@
                   "type": "string"
                 }
               },
-              "banner": {
-                "type": "string"
-              },
               "name_en": {
                 "type": "string"
               },
@@ -6639,6 +6627,24 @@
               },
               "address_en": {
                 "type": "string"
+              },
+              "activities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "moods": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "banners": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
@@ -6940,18 +6946,6 @@
                 "expected_price": {
                   "type": "number"
                 },
-                "moods": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "activities": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "perfect_times": {
                   "type": "array",
                   "items": {
@@ -6985,9 +6979,6 @@
                     "type": "string"
                   }
                 },
-                "banner": {
-                  "type": "string"
-                },
                 "name_en": {
                   "type": "string"
                 },
@@ -6996,6 +6987,24 @@
                 },
                 "address_en": {
                   "type": "string"
+                },
+                "activities": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "moods": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "banners": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -7115,9 +7124,6 @@
                     "type": "string"
                   }
                 },
-                "banner": {
-                  "type": "string"
-                },
                 "name_en": {
                   "type": "string"
                 },
@@ -7134,6 +7140,12 @@
                   }
                 },
                 "moods": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "banners": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -7275,9 +7287,6 @@
                   "type": "string"
                 }
               },
-              "banner": {
-                "type": "string"
-              },
               "name_en": {
                 "type": "string"
               },
@@ -7294,6 +7303,12 @@
                 }
               },
               "moods": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "banners": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -7610,38 +7625,6 @@
               }
             }
           },
-          "banner": {
-            "required": [
-              "id",
-              "bannerImage"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "place": {
-                "type": "string"
-              },
-              "bannerImage": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "name_en": {
             "type": "string"
           },
@@ -7732,6 +7715,41 @@
               }
             }
           },
+          "banners": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "bannerImage"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "place": {
+                  "type": "string"
+                },
+                "bannerImage": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -7790,9 +7808,6 @@
               "type": "string"
             }
           },
-          "banner": {
-            "type": "string"
-          },
           "name_en": {
             "type": "string"
           },
@@ -7809,6 +7824,12 @@
             }
           },
           "moods": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "banners": {
             "type": "array",
             "items": {
               "type": "string"
@@ -7873,18 +7894,6 @@
                 "expected_price": {
                   "type": "number"
                 },
-                "moods": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "activities": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "perfect_times": {
                   "type": "array",
                   "items": {
@@ -7918,9 +7927,6 @@
                     "type": "string"
                   }
                 },
-                "banner": {
-                  "type": "string"
-                },
                 "name_en": {
                   "type": "string"
                 },
@@ -7929,6 +7935,24 @@
                 },
                 "address_en": {
                   "type": "string"
+                },
+                "activities": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "moods": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "banners": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"

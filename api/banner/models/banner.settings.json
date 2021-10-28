@@ -19,7 +19,7 @@
       "type": "text"
     },
     "place": {
-      "via": "banner",
+      "via": "banners",
       "model": "places"
     },
     "bannerImage": {
