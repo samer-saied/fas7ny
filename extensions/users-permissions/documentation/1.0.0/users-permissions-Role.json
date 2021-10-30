@@ -528,7 +528,8 @@
               "required": [
                 "id",
                 "username",
-                "email"
+                "email",
+                "accountType"
               ],
               "properties": {
                 "id": {
@@ -560,6 +561,19 @@
                 },
                 "role": {
                   "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "mobile": {
+                  "type": "string"
+                },
+                "accountType": {
+                  "type": "string",
+                  "enum": [
+                    "Premium",
+                    "Free"
+                  ]
                 },
                 "created_by": {
                   "type": "string"

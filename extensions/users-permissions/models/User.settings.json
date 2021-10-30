@@ -58,6 +58,28 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "accountType": {
+      "type": "enumeration",
+      "enum": [
+        "Premium",
+        "Free"
+      ],
+      "required": true,
+      "default": "Free"
     }
   }
 }

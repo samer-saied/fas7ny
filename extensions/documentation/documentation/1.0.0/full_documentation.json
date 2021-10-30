@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/28/2021 7:40:25 AM"
+    "x-generation-date": "10/30/2021 3:40:58 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6871,7 +6871,8 @@
             "required": [
               "id",
               "username",
-              "email"
+              "email",
+              "accountType"
             ],
             "properties": {
               "id": {
@@ -6903,6 +6904,19 @@
               },
               "role": {
                 "type": "string"
+              },
+              "image": {
+                "type": "string"
+              },
+              "mobile": {
+                "type": "string"
+              },
+              "accountType": {
+                "type": "string",
+                "enum": [
+                  "Premium",
+                  "Free"
+                ]
               },
               "created_by": {
                 "type": "string"
@@ -8063,7 +8077,8 @@
               "required": [
                 "id",
                 "username",
-                "email"
+                "email",
+                "accountType"
               ],
               "properties": {
                 "id": {
@@ -8095,6 +8110,19 @@
                 },
                 "role": {
                   "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "mobile": {
+                  "type": "string"
+                },
+                "accountType": {
+                  "type": "string",
+                  "enum": [
+                    "Premium",
+                    "Free"
+                  ]
                 },
                 "created_by": {
                   "type": "string"
@@ -8146,7 +8174,8 @@
         "required": [
           "id",
           "username",
-          "email"
+          "email",
+          "accountType"
         ],
         "properties": {
           "id": {
@@ -8208,13 +8237,92 @@
                 "type": "string"
               }
             }
+          },
+          "image": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "mobile": {
+            "type": "string"
+          },
+          "accountType": {
+            "type": "string",
+            "default": "Free",
+            "enum": [
+              "Premium",
+              "Free"
+            ]
           }
         }
       },
       "NewUsersPermissionsUser": {
         "required": [
           "username",
-          "email"
+          "email",
+          "accountType"
         ],
         "properties": {
           "username": {
@@ -8249,6 +8357,17 @@
           },
           "role": {
             "type": "string"
+          },
+          "mobile": {
+            "type": "string"
+          },
+          "accountType": {
+            "type": "string",
+            "default": "Free",
+            "enum": [
+              "Premium",
+              "Free"
+            ]
           },
           "created_by": {
             "type": "string"
