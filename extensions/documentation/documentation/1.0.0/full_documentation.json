@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/30/2021 3:40:58 AM"
+    "x-generation-date": "11/24/2021 12:37:58 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6872,7 +6872,8 @@
               "id",
               "username",
               "email",
-              "accountType"
+              "accountType",
+              "fristName"
             ],
             "properties": {
               "id": {
@@ -6917,6 +6918,12 @@
                   "Premium",
                   "Free"
                 ]
+              },
+              "fristName": {
+                "type": "string"
+              },
+              "lastName": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -8078,7 +8085,8 @@
                 "id",
                 "username",
                 "email",
-                "accountType"
+                "accountType",
+                "fristName"
               ],
               "properties": {
                 "id": {
@@ -8123,6 +8131,12 @@
                     "Premium",
                     "Free"
                   ]
+                },
+                "fristName": {
+                  "type": "string"
+                },
+                "lastName": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -8175,7 +8189,8 @@
           "id",
           "username",
           "email",
-          "accountType"
+          "accountType",
+          "fristName"
         ],
         "properties": {
           "id": {
@@ -8315,6 +8330,13 @@
               "Premium",
               "Free"
             ]
+          },
+          "fristName": {
+            "type": "string",
+            "minLength": 3
+          },
+          "lastName": {
+            "type": "string"
           }
         }
       },
@@ -8322,7 +8344,8 @@
         "required": [
           "username",
           "email",
-          "accountType"
+          "accountType",
+          "fristName"
         ],
         "properties": {
           "username": {
@@ -8368,6 +8391,13 @@
               "Premium",
               "Free"
             ]
+          },
+          "fristName": {
+            "type": "string",
+            "minLength": 3
+          },
+          "lastName": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

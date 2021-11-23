@@ -529,7 +529,8 @@
                 "id",
                 "username",
                 "email",
-                "accountType"
+                "accountType",
+                "fristName"
               ],
               "properties": {
                 "id": {
@@ -574,6 +575,12 @@
                     "Premium",
                     "Free"
                   ]
+                },
+                "fristName": {
+                  "type": "string"
+                },
+                "lastName": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"

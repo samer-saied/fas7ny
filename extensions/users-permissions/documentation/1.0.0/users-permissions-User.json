@@ -1189,7 +1189,8 @@
           "id",
           "username",
           "email",
-          "accountType"
+          "accountType",
+          "fristName"
         ],
         "properties": {
           "id": {
@@ -1329,6 +1330,13 @@
               "Premium",
               "Free"
             ]
+          },
+          "fristName": {
+            "type": "string",
+            "minLength": 3
+          },
+          "lastName": {
+            "type": "string"
           }
         }
       },
@@ -1336,7 +1344,8 @@
         "required": [
           "username",
           "email",
-          "accountType"
+          "accountType",
+          "fristName"
         ],
         "properties": {
           "username": {
@@ -1382,6 +1391,13 @@
               "Premium",
               "Free"
             ]
+          },
+          "fristName": {
+            "type": "string",
+            "minLength": 3
+          },
+          "lastName": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

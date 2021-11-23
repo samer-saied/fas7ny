@@ -80,8 +80,8 @@
       "model": "city"
     },
     "favourites": {
-      "private": true,
       "via": "places",
+      "private": true,
       "collection": "favourite"
     },
     "name_en": {

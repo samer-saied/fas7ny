@@ -80,6 +80,14 @@
       ],
       "required": true,
       "default": "Free"
+    },
+    "fristName": {
+      "type": "string",
+      "required": true,
+      "minLength": 3
+    },
+    "lastName": {
+      "type": "string"
     }
   }
 }
